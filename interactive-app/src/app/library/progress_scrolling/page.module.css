@@ -1,0 +1,16 @@
+.container {
+  height: 200vh;
+  padding: 20px;
+}
+
+.progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(var(--scroll-progress, 0) * 1%);
+  height: 10px;
+  background-color: #BA867B;
+  z-index: 1000;
+}
+
+
