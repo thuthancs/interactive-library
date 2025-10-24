@@ -16,12 +16,37 @@ const components = [
     description: "a plot where each dot represents a data point",
     href: "/library/dot_plot",
   },
+  {
+    title: "geographic map",
+    description: "a map that visualizes geographic data",
+    href: "/library/interactive_map",
+  },
+  {
+    title: "image comparison slider",
+    description: "compare two images with a draggable slider",
+    href: "/library/image_comparison_slider",
+  },
+  {
+    title: "data filter",
+    description: "filter data points based on user-selected criteria",
+    href: "/library/data_filter",
+  },
+  {
+    title: "timeline",
+    description: "an interactive timeline to explore events over time",
+    href: "/library/timeline",
+  },
+  {
+    title: "distributions",
+    description: "visualize data distributions with interactive elements",
+    href: "/library/distributions",
+  }
 ];
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-50 flex flex-col items-center py-20 px-8">
-      <h1 className="text-5xl mb-12 font-[var(--font-reenie-beanie)] text-center">
+      <h1 className="text-5xl mb-12 text-center">
         interactive library
       </h1>
 
