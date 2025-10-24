@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Google_Sans_Code } from "next/font/google";
+import { Quicksand } from "next/font/google";
 import "./globals.css";
 
-const googleSansCode = Google_Sans_Code({
+const quickSand = Quicksand({
   variable: "--font-reenie-beanie",
   subsets: ["latin"],
   weight: "400"
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${googleSansCode.variable} ${googleSansCode.variable} antialiased`}
+        className={`${quickSand.variable} ${quickSand.variable} antialiased`}
       >
         {children}
       </body>

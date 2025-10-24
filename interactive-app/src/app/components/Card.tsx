@@ -12,9 +12,9 @@ export default function Card({ title, description, href }: CardProps) {
     return (
         <Link 
             href={href}
-            className="block p-6 bg-white border border-black-100"
+            className="group block p-6 bg-white border border-black-100"
         >
-            <h2 className="text-xl mb-2">{title}</h2>
+            <h2 className="text-xl mb-2 group-hover:underline">{title}</h2>
             <p className="text-gray-600 text-base">{description}</p>
         </Link>
     )
