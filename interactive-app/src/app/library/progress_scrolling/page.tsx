@@ -1,6 +1,7 @@
 "use client";
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useEffect } from 'react';
 import styles from './page.module.css';
 
@@ -48,7 +49,7 @@ export default function ProgressCrollPage() {
             what percentage of the page has been scrolled. This value is then applied as
             a CSS variable that controls the width of the progress bar.
           </p>
-          <Image src="/progress_heights.png" alt="Diagram showing scroll progress calculation" width={800} height={400} />
+          <Image src="/image.png" alt="Diagram showing scroll progress calculation" width={800} height={400} />
           <h2 className="font-bold text-lg mt-8 mb-4">Implementation</h2>
           <p>The image above shows us some built-in properties for getting the value of different heights of the window.
             As a result, in order to calculate the scroll progress, we follow the formula below:
@@ -80,6 +81,12 @@ export default function ProgressCrollPage() {
               <code>{`return () => window.removeEventListener('scroll', handleScroll);`}</code>
             </p>
           </div>
+          <h2 className="font-bold text-lg mt-8 mb-4">Source Code</h2>
+          <p>
+            <Link href="https://github.com/thuthancs/interactive-library" className='text-blue-600 underline'>
+              https://github.com/thuthancs/interactive-library
+            </Link>
+          </p>
         </article>
       </main>
     </div>
