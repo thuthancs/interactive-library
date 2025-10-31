@@ -40,6 +40,11 @@ const components = [
     title: "distributions",
     description: "visualize data distributions with interactive elements",
     href: "/library/distributions",
+  },
+  {
+    title: "menu navigation",
+    description: "an interactive menu for navigating content",
+    href: "/library/menu_navigation",
   }
 ];
 
